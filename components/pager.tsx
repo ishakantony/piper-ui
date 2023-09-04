@@ -5,6 +5,7 @@ import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button/button";
 import { docsConfig } from "@/config/docs";
 import { cn } from "@/lib/utils";
+import { SidebarNavItem } from "@/types";
 
 interface DocsPagerProps {
   doc: Doc;
@@ -57,7 +58,7 @@ export function getPagerForDoc(doc: Doc) {
   };
 }
 
-export function flatten(links: { items? }[]) {
+export function flatten(links: { items?: SidebarNavItem[] }[]): any {
   return links.reduce((flat, link) => {
     return flat.concat(link.items ? flatten(link.items) : link);
   }, []);
