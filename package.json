@@ -9,25 +9,33 @@
     "yarn": "please-use-pnpm"
   },
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
     "prettier": "prettier --write .",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "dev": "next dev",
+    "build": "contentlayer build && next build",
+    "turbo": "next dev --turbo",
+    "start": "next start",
+    "lint": "next lint",
+    "preview": "next build && next start",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-toast": "^1.1.4",
+    "@t3-oss/env-nextjs": "^0.6.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "contentlayer": "^0.3.4",
     "lucide-react": "^0.274.0",
     "next": "13.4.19",
+    "next-contentlayer": "^0.3.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "shiki": "^0.14.4",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.0",
@@ -43,14 +51,23 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
+    "concurrently": "^8.2.1",
     "cross-env": "^7.0.3",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "eslint-plugin-storybook": "^0.6.13",
+    "mdast-util-toc": "^7.0.0",
     "postcss": "8.4.29",
     "prettier": "^3.0.3",
+    "rehype": "^13.0.1",
+    "rehype-autolink-headings": "^6.1.1",
+    "rehype-pretty-code": "^0.10.1",
+    "rehype-slug": "^6.0.0",
+    "remark": "^14.0.3",
+    "remark-gfm": "^3.0.1",
     "storybook": "^7.4.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "unist-util-visit": "^5.0.0"
   }
 }

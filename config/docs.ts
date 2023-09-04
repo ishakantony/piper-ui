@@ -6,10 +6,6 @@ export const docsConfig: DocsConfig = {
       title: "Documentation",
       href: "/docs",
     },
-    {
-      title: "Guides",
-      href: "/guides",
-    },
   ],
   sidebarNav: [
     {
@@ -22,111 +18,60 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
-      title: "Documentation",
+      title: "Core",
       items: [
         {
-          title: "Introduction",
-          href: "/docs/documentation",
-        },
-        {
-          title: "Contentlayer",
+          title: "Pipeline",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Components",
-          href: "/docs/documentation/components",
+          title: "Pipeline Template",
+          href: "/docs/in-progress",
+          disabled: true,
         },
         {
-          title: "Code Blocks",
-          href: "/docs/documentation/code-blocks",
+          title: "Pipeline Instance",
+          href: "/docs/in-progress",
+          disabled: true,
         },
         {
-          title: "Style Guide",
-          href: "/docs/documentation/style-guide",
-        },
-        {
-          title: "Search",
+          title: "Putting it Together",
           href: "/docs/in-progress",
           disabled: true,
         },
       ],
     },
     {
-      title: "Blog",
+      title: "Analytics",
       items: [
         {
-          title: "Introduction",
+          title: "Dashboard",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Build your own",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Writing Posts",
+          title: "Pipeline Statistics",
           href: "/docs/in-progress",
           disabled: true,
         },
       ],
     },
     {
-      title: "Dashboard",
+      title: "Security",
       items: [
         {
-          title: "Introduction",
+          title: "Basic Security",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Layouts",
+          title: "Pipeline Locking",
           href: "/docs/in-progress",
           disabled: true,
         },
         {
-          title: "Server Components",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Authentication",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Database with Prisma",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "API Routes",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-      ],
-    },
-    {
-      title: "Marketing Site",
-      items: [
-        {
-          title: "Introduction",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "File Structure",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Tailwind CSS",
-          href: "/docs/in-progress",
-          disabled: true,
-        },
-        {
-          title: "Typography",
+          title: "Approval-Based Execution",
           href: "/docs/in-progress",
           disabled: true,
         },
