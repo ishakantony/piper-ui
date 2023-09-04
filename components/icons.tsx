@@ -1,6 +1,7 @@
 import {
   AlertTriangle,
   ArrowRight,
+  Boxes,
   BrainCircuit,
   Check,
   ChevronLeft,
@@ -11,6 +12,7 @@ import {
   HelpCircle,
   Image,
   Laptop,
+  LayoutDashboard,
   Loader2,
   LucideProps,
   Moon,
@@ -69,4 +71,6 @@ export const Icons = {
   ),
   twitter: Twitter,
   check: Check,
+  dashboard: LayoutDashboard,
+  pipeline: Boxes,
 };
