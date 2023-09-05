@@ -22,7 +22,6 @@ export const dashboardConfig: DashboardConfig = {
       title: "Pipelines",
       href: "/pipelines",
       icon: "pipeline",
-      disabled: true,
     },
     {
       title: "Settings",

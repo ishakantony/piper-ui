@@ -6,13 +6,11 @@ import { dashboardConfig } from "@/config/dashboard";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-interface DashboardLayoutProps {
+interface AppLayoutProps {
   children?: React.ReactNode;
 }
 
-export default async function DashboardLayout({
-  children,
-}: DashboardLayoutProps) {
+export default function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col space-y-6">
       <header className="sticky top-0 z-40 border-b bg-background">
