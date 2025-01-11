@@ -21,7 +21,8 @@
     "pnpm-lock.yaml",
     "dist/**",
     "build/**",
-    ".next/**"
+    ".next/**",
+    ".vscode/**"
   ],
   "dictionaries": [
     "typescript",
