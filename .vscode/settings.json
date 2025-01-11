@@ -1,4 +1,8 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always",
+    "source.fixAll": "always"
+  },
   "cSpell.words": ["nums", "shadcn", "turbopack"],
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
