@@ -4,6 +4,7 @@ import {
   Activity,
   Clock,
   Frame,
+  Home,
   LifeBuoy,
   Map,
   PieChart,
@@ -31,14 +32,19 @@ const data = {
   },
   navMain: [
     {
+      title: 'Home',
+      url: '/',
+      icon: Home,
+      isActive: true,
+    },
+    {
       title: 'Pipelines',
       url: '#',
       icon: Activity,
-      isActive: true,
       items: [
         {
-          title: 'Dashboards',
-          url: '#',
+          title: 'Dashboard',
+          url: '/pipelines/dashboard',
         },
         {
           title: 'Executions',
@@ -56,7 +62,7 @@ const data = {
       icon: Clock,
       items: [
         {
-          title: 'Dashboards',
+          title: 'Dashboard',
           url: '#',
         },
         {

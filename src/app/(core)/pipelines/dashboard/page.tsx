@@ -1,14 +1,16 @@
 import {
   Breadcrumb,
   BreadcrumbItem,
+  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
+  BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb'
 import { Separator } from '@/components/ui/separator'
 import { SidebarTrigger } from '@/components/ui/sidebar'
 import React from 'react'
 
-export default function Home() {
+export default function PipelineDashboardPage() {
   return (
     <React.Fragment>
       <header className="flex h-16 shrink-0 items-center gap-2">
@@ -17,21 +19,19 @@ export default function Home() {
           <Separator orientation="vertical" className="mr-2 h-4" />
           <Breadcrumb>
             <BreadcrumbList>
+              <BreadcrumbItem className="hidden md:block">
+                <BreadcrumbLink href="#">Pipelines</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
-                <BreadcrumbPage>Home</BreadcrumbPage>
+                <BreadcrumbPage>Dashboard</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
         </div>
       </header>
-      <div className="flex flex-col flex-1 justify-center items-center p-4 pt-0">
-        <h1 className="text-4xl">
-          Streamline Your Systems Tasks with{' '}
-          <span className="font-bold underline">Piper</span>
-        </h1>
-        <p className="text-gray-600">
-          Manage pipelines, jobs, and runners seamlessly
-        </p>
+      <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+        <h1 className="text-3xl font-bold">Pipeline Dashboard</h1>
       </div>
     </React.Fragment>
   )
