@@ -1,27 +1,22 @@
 'use client'
 
 import {
-  BookOpen,
-  Bot,
+  Activity,
+  Clock,
   Frame,
   LifeBuoy,
   Map,
   PieChart,
   Send,
-  Settings2,
-  SquareTerminal,
   Waypoints,
 } from 'lucide-react'
 import * as React from 'react'
 
 import { NavMain } from '@/components/nav-main'
-import { NavProjects } from '@/components/nav-projects'
 import { NavSecondary } from '@/components/nav-secondary'
-import { NavUser } from '@/components/nav-user'
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -36,17 +31,17 @@ const data = {
   },
   navMain: [
     {
-      title: 'Playground',
+      title: 'Pipelines',
       url: '#',
-      icon: SquareTerminal,
+      icon: Activity,
       isActive: true,
       items: [
         {
-          title: 'History',
+          title: 'Dashboards',
           url: '#',
         },
         {
-          title: 'Starred',
+          title: 'Executions',
           url: '#',
         },
         {
@@ -56,66 +51,20 @@ const data = {
       ],
     },
     {
-      title: 'Models',
+      title: 'Schedules',
       url: '#',
-      icon: Bot,
+      icon: Clock,
       items: [
         {
-          title: 'Genesis',
+          title: 'Dashboards',
           url: '#',
         },
         {
-          title: 'Explorer',
+          title: 'Plans',
           url: '#',
         },
         {
-          title: 'Quantum',
-          url: '#',
-        },
-      ],
-    },
-    {
-      title: 'Documentation',
-      url: '#',
-      icon: BookOpen,
-      items: [
-        {
-          title: 'Introduction',
-          url: '#',
-        },
-        {
-          title: 'Get Started',
-          url: '#',
-        },
-        {
-          title: 'Tutorials',
-          url: '#',
-        },
-        {
-          title: 'Changelog',
-          url: '#',
-        },
-      ],
-    },
-    {
-      title: 'Settings',
-      url: '#',
-      icon: Settings2,
-      items: [
-        {
-          title: 'General',
-          url: '#',
-        },
-        {
-          title: 'Team',
-          url: '#',
-        },
-        {
-          title: 'Billing',
-          url: '#',
-        },
-        {
-          title: 'Limits',
+          title: 'Settings',
           url: '#',
         },
       ],
@@ -164,8 +113,10 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                   <Waypoints className="size-4" />
                 </div>
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">Acme Inc</span>
-                  <span className="truncate text-xs">Enterprise</span>
+                  <span className="truncate font-semibold">Piper</span>
+                  <span className="truncate text-xs">
+                    Manage systems tasks at Ease
+                  </span>
                 </div>
               </a>
             </SidebarMenuButton>
@@ -174,12 +125,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavProjects projects={data.projects} />
         <NavSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
     </Sidebar>
   )
 }
