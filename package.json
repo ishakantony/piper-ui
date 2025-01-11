@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write '**/*.{js,ts,tsx,css,json}'"
+    "format": "prettier --write '**/*.{js,ts,tsx,css,json}'",
+    "spellcheck": "cspell \"**/*.{ts,tsx,md,json}\""
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.2",
@@ -31,6 +32,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cspell": "^8.6.0",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
     "postcss": "^8",

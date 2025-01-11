@@ -1,0 +1,42 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "nextjs",
+    "tailwindcss",
+    "radix",
+    "tsx",
+    "clsx",
+    "lucide",
+    "postcss",
+    "prettier",
+    "eslint",
+    "turbopack",
+    "shadcn",
+    "nums"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "package-lock.json",
+    "pnpm-lock.yaml",
+    "dist/**",
+    "build/**",
+    ".next/**"
+  ],
+  "dictionaries": [
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "fonts",
+    "softwareTerms",
+    "en_US"
+  ],
+  "patterns": [
+    {
+      "name": "Markdown links",
+      "pattern": "/\\[.*?\\]\\(.*?\\)/g",
+      "description": "Markdown links"
+    }
+  ]
+}

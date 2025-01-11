@@ -1,0 +1,8 @@
+{
+  "*.{ts,tsx}": [
+    "eslint --fix",
+    "cspell --no-must-find-files",
+    "prettier --write"
+  ],
+  "*.{md,json}": ["cspell --no-must-find-files", "prettier --write"]
+}
