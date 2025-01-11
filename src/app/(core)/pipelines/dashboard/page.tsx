@@ -8,6 +8,9 @@ import {
 } from '@/components/ui/breadcrumb'
 import { Separator } from '@/components/ui/separator'
 import { SidebarTrigger } from '@/components/ui/sidebar'
+import { PipelineCards } from '@/features/pipeline-dashboard/pipeline-cards'
+import { PipelineStats } from '@/features/pipeline-dashboard/pipeline-stats'
+import { RunningPipelines } from '@/features/pipeline-dashboard/running-pipelines'
 import React from 'react'
 
 export default function PipelineDashboardPage() {
@@ -30,8 +33,11 @@ export default function PipelineDashboardPage() {
           </Breadcrumb>
         </div>
       </header>
-      <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+      <div className="space-y-4 p-4 pt-0">
         <h1 className="text-3xl font-bold">Pipeline Dashboard</h1>
+        <PipelineStats />
+        <PipelineCards />
+        <RunningPipelines />
       </div>
     </React.Fragment>
   )
